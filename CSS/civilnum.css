@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+}
+
+body {
+  background-image: url("../img/석양.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box_inner{
+    width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+main{
+    box-sizing: border-box;
+    margin: 200px auto 0;
+    padding: 20px;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+}
+main > h2 {
+    margin-bottom: 10px;
+}
+.checkNum > input{
+    width: 150px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 20px;
+}
+.checkNum > span{
+    margin: 0 20px;
+}
+main > input{
+    margin: 15px 0;
+    width: 81%;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+}
+main > input:hover {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+main > #result {
+    font-size: 20px;
+}

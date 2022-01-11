@@ -1,0 +1,163 @@
+.tail {
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: -20%;
+  }
+  body .tail > div {
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    /* transform: rotateZ(-45deg) ; */
+    /* background-color: rgba(255, 255, 255, 0.37); */
+    filter: drop-shadow(45deg);
+    box-shadow: 20px 20px 5px white;
+    animation: fall linear infinite;
+  }
+  #tail1 {
+    top: 300px;
+    left: 20%;
+    animation-duration: 7s;
+  }
+  #tail2 {
+    top: 400px;
+    left: 6%;
+    animation-duration: 5.8s;
+  }
+  #tail3 {
+    top: 340px;
+    left: 70%;
+    animation-duration: 8.9s;
+  }
+  #tail4 {
+    top: 210px;
+    left: 50%;
+    animation-duration: 10.1s;
+  }
+  #tail5 {
+    top: 100px;
+    left: 20%;
+    animation-duration: 9.5s;
+  }
+  #tail6 {
+    top: 120px;
+    left: 90%;
+    animation-duration: 6.8s;
+  }
+  #tail7 {
+    top: 90px;
+    left: 40%;
+    animation-duration: 9.1s;
+  }
+  #tail8 {
+    top: 90px;
+    left: 75%;
+    animation-duration: 6.5s;
+  }
+  #tail9 {
+    top: 500px;
+    left: 55%;
+    animation-duration: 7.4s;
+  }
+  #tail10 {
+    top: 600px;
+    left: 20%;
+    animation-duration: 6.2s;
+  }
+  #tail11 {
+    top: 400px;
+    right: 100px;
+    animation-duration: 5.2s;
+  }
+  #tail12 {
+    top: 600px;
+    right: 100px;
+    animation-duration: 4.7s;
+  }
+  .moon {
+    position: relative;
+    margin: 0 auto;
+    top: -10px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    background: -webkit-linear-gradient(left bottom, rgb(253, 174, 187), white);
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 20px white; */
+    transform: scale(0.5);
+    animation: lightappear 10s ease forwards, bling 2s linear alternate infinite;
+  }
+  #tails {
+    position: relative;
+    margin: 0 auto;
+    top: 90px;
+    width: 200px;
+    height: 200px;
+    border: 20px solid rgba(255, 255, 255, 0.473);
+    border-radius: 50%;
+    border-bottom-style: none;
+    transform: translateY(-100px) translateX(-20px) scale(0.7) skewX(70deg)
+      rotateZ(-120deg);
+  }
+  @keyframes fall {
+    from {
+      transform: rotateZ(-70deg) translateX(600px);
+    }
+    50% {
+      transform: rotateZ(-70deg) translateX(-200px);
+    }
+    to {
+      transform: rotateZ(-70deg) translateX(-1000px);
+    }
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: unset;
+    }
+  }
+  @keyframes lightappear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.4;
+    }
+  }
+  @keyframes bling {
+    from {
+      box-shadow: 0px 0px 20px white;
+    }
+    to {
+      box-shadow: 0px 0px 100px white;
+    }
+  }
+  @keyframes left {
+    from {
+      position: relative;
+      left: 200px;
+    }
+    to {
+      position: relative;
+      left: 10px;
+    }
+  }
+  @keyframes background {
+    from {
+      background-image: url("../img/석양.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    to {
+      background-image: url("../img/밤편집.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  

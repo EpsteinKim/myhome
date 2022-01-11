@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../img/석양.jpg") no-repeat center / cover;
+  background-attachment: fixed;
+  font-family: "Times New Roman", Times, serif;
+}
+ul {
+  display: inline-block;
+  list-style: none;
+}
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+#wrapper{
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+}
+#wrapper > a {position: relative; left:20px; top:40px; font-size: 40px;}
+/* 사이트맵 */
+.sitemap {
+  margin: 60px auto 0px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.sitemap ul{padding: 20px 50px; box-sizing: border-box; vertical-align: top;}
+.sitemap h1, h2{padding: 10px; color: white;}
+.sitemap li a{font-size: 20px;}

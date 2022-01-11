@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  background-image: url(../img/로그인창문.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+div {
+  width: 400px;
+  height: 400px;
+  margin: 150px auto;
+  background-color: rgba(255, 255, 255, 0.767);
+}
+
+h2 {
+  position: relative;
+  top: 30px;
+  font-size: 35px;
+}
+
+form {
+  position: relative;
+  top: 50px;
+}
+
+input {
+  display: block;
+  margin: 20px auto;
+  width: 70%;
+  font-size: 20px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+input[type="password"],
+input[type="text"] {
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: unset;
+  text-align: left;
+  text-indent: 3px;
+  font-size: 15px;
+  margin: 25px auto 0 auto;
+}
+
+input[type="submit"] {
+  border: none;
+  background-color: black;
+  height: 40px;
+  border-radius: 100px;
+  margin-top: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+p {
+  position: relative;
+  top: 50px;
+}
+.null {
+  position: relative;
+  display: block;
+  top: 60px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}

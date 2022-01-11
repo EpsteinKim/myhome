@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+body {
+  background-image: url(../img/로그인이미지편집.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+#wrapper {
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 500px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: "Noto Sans KR", sans-serif;
+  border: 1px solid rgba(135, 207, 235, 0);
+  border-radius: 20px;
+}
+h2 {
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+p {
+  font-size: 17px;
+  margin: 2px;
+  margin: 5px 0px;
+}
+
+input {
+  border-bottom: 2px solid rgba(52, 13, 230, 0.275);
+  font-size: 17px;
+  outline: none;
+}
+
+form > p:nth-child(1) > input {
+  float: right;
+  width: 70%;
+  text-align: center;
+}
+form > p:nth-child(2) > input {
+  float: right;
+  width: 70%;
+  text-align: center;
+}
+form > p:nth-child(3) > input {
+  float: right;
+  width: 70%;
+  text-align: center;
+}
+form > p:nth-child(4) > input {
+  float: right;
+  width: 70%;
+  text-align: center;
+}
+form > p:nth-child(5) > input {
+  float: right;
+  width: 70%;
+  text-align: center;
+}
+form > p:nth-child(6) > input {
+  float: right;
+  width: 70%;
+  text-align: center;
+}
+/* form > p:nth-child(7) > input */
+
+input[type="checkbox"] {
+  margin-left: 10px;
+  position: relative;
+  left: -4px;
+  transform: scale(1.2);
+}
+p > label:first-child {
+  margin-left: 110px;
+}
+input[name*="ssn"] {
+  width: 100px;
+}
+/* 주민등록 */
+form > p:nth-child(8) > input {
+  text-align: center;
+}
+form > p:nth-child(8) > input:first-child {
+  margin-left: 49px;
+}
+form > p:nth-child(8) > span {
+  padding: 0px 10px;
+}
+#RNN_check {
+  margin-left: 20px;
+}
+/* 끝 */
+form > p:nth-child(9){
+  width: 100%;
+}
+form > p:nth-child(9) > input{
+  width: 8%;
+  text-align: center;
+}
+form > p:nth-child(9) > input:first-child{
+  margin-left: 150px;
+}
+form > p:nth-child(9) > input:first-child ~ input{
+margin-left: 20px;
+}
+form > p:nth-child(10) > input {
+  width: 40%;
+  text-align: center;
+  margin-left: 80px;
+}
+form > p:nth-child(10) > input + input {
+  width: 25%;
+  margin: 0px;
+  float: right;
+  text-align: center;
+  border: none;
+  position: relative;
+  top: 2px;
+}
+form > p:nth-child(11) > input {
+  float: right;
+  width: 70%;
+  text-align: center;
+}
+form > p:nth-child(12) > input {
+  float: right;
+  width: 70%;
+  text-align: center;
+}
+form > p:nth-child(13) > input {
+  float: right;
+  width: 70%;
+  text-align: center;
+}
+form > p:nth-child(14) {
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px 0px;
+  justify-content: space-between;
+  height: 60px;
+}
+form > p:nth-child(14) > input {
+  background-color: whitesmoke;
+  border: none;
+  font-size: 18px;
+  width: 45%;
+  border-radius: 20px;
+  padding: 4px;
+}
+form > p:nth-child(14) > input:hover {
+  cursor: pointer;
+}
+.null {
+  text-align: center;
+}
+
+#wrapper > p:last-child {
+  text-align: center;
+}

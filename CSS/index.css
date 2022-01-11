@@ -1,0 +1,86 @@
+/* 전체 마진을 제거 */
+* {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+/* 배경화면 설정 */
+body {
+  /* background-image: url("../img/석양.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; */
+  width: 100%;
+  animation: background 6s ease forwards;
+  overflow: hidden;
+}
+
+.box_inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.login_top {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-around;
+  color: rgba(255, 235, 205, 0.705);
+}
+.login_top > div {
+  width: 33%;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.login_left,
+.login_right {
+  animation: appear 2s ease-in-out forwards;
+}
+.login_left a {
+  text-decoration: none;
+  color: rgba(255, 235, 205, 0.705);
+  margin-right: 20px;
+}
+.login_center {
+  display: flex;
+  justify-content: center;
+}
+.login_center > #time{margin-right: 20px;}
+
+header {
+  margin-top: 20px;
+  min-width: max-content;
+  animation: appear 2s ease-in-out forwards;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+header li {
+  font-family: "Times";
+  font-weight: bold;
+  display: inline-block;
+  text-decoration-line: none;
+  padding: 10px;
+}
+header li > a {
+  text-decoration: none;
+  color: rgba(255, 235, 205, 0.705);
+}
+header a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px rgba(255, 235, 205, 0.705);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+header a:hover:after {
+  transform: scaleX(1);
+}

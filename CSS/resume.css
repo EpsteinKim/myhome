@@ -1,0 +1,87 @@
+* {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+body {
+  background-image: url("../img/석양.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+login {
+  position: relative;
+  left: 20px;
+  top: 10px;
+  font-size: 20px;
+  font-family: Times, serif;
+  word-spacing: 20px;
+}
+login a {
+  text-decoration: none;
+  color: rgba(255, 235, 205, 0.705);
+}
+header {
+  border: 2px solid rgba(255, 235, 205, 0.705);
+  border-left-style: none;
+  border-right-style: none;
+  margin-top: 20px;
+  min-width: max-content;
+}
+header ul {
+  list-style: none;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: none;
+  margin: 15px;
+  word-spacing: 20px;
+}
+header li {
+  font-family: "Times";
+  font-weight: bold;
+  display: inline-block;
+  text-decoration-line: none;
+}
+header li > a {
+  text-decoration: none;
+  color: rgba(255, 235, 205, 0.705);
+}
+header a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px rgba(255, 235, 205, 0.705);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+header a:hover:after {
+  transform: scaleX(1);
+}
+
+main {
+  background-color: rgb(209, 209, 209);
+  /* 컨텐츠의 사이즈에 맞게 */
+  width: fit-content;
+  margin: 20px auto;
+}
+table {
+  align-content: center;
+  border-collapse: collapse;
+}
+.string {
+  font-size: large;
+  font-weight: bold;
+}
+.font {
+  font-family: Times;
+  font-size: 40px;
+  color: rgba(255, 235, 205, 0.705);
+  margin: 30px;
+  margin-top: 50px;
+  text-shadow: 3px, 3px, 3px, black;
+}
+.color {
+  background-color: beige;
+}

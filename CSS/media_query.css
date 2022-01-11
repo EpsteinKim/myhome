@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+}
+.header{
+    width: 100%;
+    background-color: black;
+}
+.nav>ul{
+    height: 50px;
+    list-style: none;
+    color: white;
+    font-size: 12px;
+}
+.nav>ul>li{
+    float: left;
+    padding: 10px;
+    margin: 5px;
+}
+.nav>ul>li:first-child{
+    display: none;
+}
+/*
+    구형폰 : 320px
+    현재폰 : 360px ~ 375px
+*/
+.nav,#contents{
+    width: 310px;
+    margin: 0 auto;
+}
+#intro{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#intro > img{
+    width: 100%;
+    padding: 10px;
+}
+#desc{
+    width: 100%;
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+#footer{
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 10px;
+}
+
+/*
+    태블릿 : 768px ~
+ */
+
+@media screen and (min-width: 768px) {
+    .nav, #contents{
+        width: 750px;
+        margin: 0 auto;
+    }
+    #intro{
+        width: 100%;
+    }
+    #intro > img{
+        width: 20%;
+        padding: 10px;
+    }
+    #desc{
+        width: 100%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+    #footer{
+        height: 70px;
+        padding: 30px;
+        background-color: gray;
+    }
+}
+
+/*
+    데스크탑 가로 사이즈 : 1024px ~
+*/
+@media screen and (min-width:1024px) {
+.nav, #contents{
+    width:1024px;
+    margin: 0 auto;
+}
+div.header{
+    margin:0 auto 90px;
+}
+.nav>ul>li{font-size: 16px;}
+#contents{
+    clear: left;
+}
+.nav>ul>li:first-child{
+    display: unset;
+}
+.nav>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+
+#intro > img{
+    width: 200px;
+    padding: 10px;
+}
+div#intro{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    float:left
+}
+div#desc{
+    font-size: 20px;
+}
+#footer{
+    position: fixed;
+    bottom: 0;
+}
+}
